@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rael Fang — 个人主页</title>
+  <meta name="description" content="Rael Fang 的个人主页 — 开发者 • 设计爱好者 • 开源贡献者" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <meta name="theme-color" content="#0f1724" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#home">Rael Fang</a>
+      <nav class="nav" id="nav">
+        <a href="#about">关于</a>
+        <a href="#skills">技能</a>
+        <a href="#projects">项目</a>
+        <a href="#contact">联系</a>
+      </nav>
+      <div class="header-actions">
+        <button id="theme-toggle" class="btn-icon" aria-label="切换主题">🌗</button>
+        <button class="btn" id="resume-btn">简历</button>
+        <button class="hamburger" id="hamburger" aria-label="菜单">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-left">
+          <h1>你好，我是 Rael Fang</h1>
+          <p class="lead">全栈工程师 • 前端开发 • 开源爱好者 — 我热爱把想法变成高质量的产品。</p>
+          <p>
+            <a class="btn" href="#projects">查看我的项目</a>
+            <a class="btn btn-ghost" href="#contact">联系我</a>
+          </p>
+          <p class="meta">
+            目前在寻找新机会 · 开放远程合作
+          </p>
+        </div>
+        <div class="hero-right">
+          <div class="card profile-card">
+            <img class="avatar" src="https://via.placeholder.com/160" alt="头像">
+            <h3>Rael Fang</h3>
+            <p class="muted">前端 / 全栈 开发者</p>
+            <div class="socials">
+              <a href="#" aria-label="GitHub">GitHub</a>
+              <a href="#" aria-label="LinkedIn">LinkedIn</a>
+              <a href="#" aria-label="Email">Email</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2>关于我</h2>
+        <p>我专注于构建现代 Web 应用，熟悉 JavaScript、TypeScript、React 以及后端 Node.js 服务。喜欢关注用户体验与性能优化，在开源项目中也有持续贡献。</p>
+        <ul class="about-list">
+          <li><strong>位置：</strong>北京（可远程）</li>
+          <li><strong>邮箱：</strong>rael@example.com</li>
+          <li><strong>个人站：</strong><a href="#">https://rael.dev</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="skills" class="section bg-alt">
+      <div class="container">
+        <h2>技能</h2>
+        <div class="chips">
+          <span class="chip">HTML</span>
+          <span class="chip">CSS / SCSS</span>
+          <span class="chip">JavaScript</span>
+          <span class="chip">TypeScript</span>
+          <span class="chip">React</span>
+          <span class="chip">Node.js</span>
+          <span class="chip">GraphQL</span>
+          <span class="chip">Docker</span>
+          <span class="chip">测试（Jest）</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>项目</h2>
+        <div class="projects-grid">
+          <article class="project-card">
+            <h3>项目名称 A</h3>
+            <p class="muted">一个使用 React + Node 的全栈范例，包含认证与实时功能。</p>
+            <p>
+              <a href="#" class="link">查看源码</a>
+              <a href="#" class="link">演示</a>
+            </p>
+          </article>
+
+          <article class="project-card">
+            <h3>项目名称 B</h3>
+            <p class="muted">一个开源组件库，专注于可访问性与主题化支持。</p>
+            <p>
+              <a href="#" class="link">查看源码</a>
+              <a href="#" class="link">演示</a>
+            </p>
+          </article>
+
+          <article class="project-card">
+            <h3>项目名称 C</h3>
+            <p class="muted">移动端优先的 PWA，离线支持与性能优化实践。</p>
+            <p>
+              <a href="#" class="link">查看源码</a>
+              <a href="#" class="link">演示</a>
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section bg-alt">
+      <div class="container contact-inner">
+        <div class="contact-left">
+          <h2>联系我</h2>
+          <p>欢迎合作、咨询或问候。发邮件通常会更快回复。</p>
+          <p><strong>邮箱：</strong> <a id="email-link" href="mailto:rael@example.com">rael@example.com</a></p>
+          <p><strong>在社交：</strong>
+            <a href="#">GitHub</a> · <a href="#">LinkedIn</a> · <a href="#">微博</a>
+          </p>
+        </div>
+
+        <form id="contact-form" class="contact-form" aria-label="联系表单">
+          <label>姓名
+            <input type="text" name="name" required placeholder="你的姓名">
+          </label>
+          <label>邮箱
+            <input type="email" name="email" required placeholder="你的邮箱">
+          </label>
+          <label>信息
+            <textarea name="message" rows="6" required placeholder="写点什么..."></textarea>
+          </label>
+          <div class="form-actions">
+            <button type="submit" class="btn">发送消息</button>
+            <button type="button" id="copy-email" class="btn btn-ghost">复制邮箱</button>
+          </div>
+          <p id="form-msg" class="muted" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Rael Fang · 基于静态模板构建 · 欢迎联系</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
